@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
 </head>
 <body>
-    <h1>Welcome to HTML</h1>
-    <p>This is a simple HTML page.</p>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Information System</h1>
+        <p>Welcome to our website</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>
+            This website provides information about students,
+            courses, and academic activities.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We aim to manage student records efficiently and
+            provide easy access to academic information.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Available Courses</h2>
+
+        <ul>
+            <li>Computer Science</li>
+            <li>Software Engineering</li>
+            <li>Information Technology</li>
+            <li>Data Science</li>
+        </ul>
+
+        <h3>Course Details</h3>
+
+        <table border="1">
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Fee</th>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>4 Years</td>
+                <td>$4000</td>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>4 Years</td>
+                <td>$4500</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>4 Years</td>
+                <td>$5000</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <br><br>
+
+            <label>Course Interested:</label><br>
+            <select>
+                <option>Computer Science</option>
+                <option>Software Engineering</option>
+                <option>Information Technology</option>
+                <option>Data Science</option>
+            </select>
+            <br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5" cols="40"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Information System. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
