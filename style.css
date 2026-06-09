@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    padding:30px;
+    color:#333;
+}
+
+header{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.photo img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+}
+
+.personal-info{
+    flex:1;
+    margin-left:30px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#1f4e79;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th, td{
+    padding:10px;
+    text-align:left;
+}
+
+ol, ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+dt{
+    margin-top:10px;
+}
+
+dd{
+    margin-left:20px;
+    margin-bottom:5px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+input,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px;
+    background:#1f4e79;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#163a5c;
+}
+
+@media screen and (max-width:768px){
+
+    .header-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .personal-info{
+        margin-left:0;
+        margin-top:20px;
+    }
+
+    .photo img{
+        width:140px;
+        height:140px;
+    }
+
+    body{
+        padding:10px;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
